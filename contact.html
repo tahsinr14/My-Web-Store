@@ -1,0 +1,244 @@
+<!--Name: Tahsin Rahman
+Student ID: 165063199
+Email: trahman31@myseneca.ca
+Date: December 8,2020-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/1835f2c2a8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artiva by Tahsin</title>
+  </head>
+  <link rel="shortcut icon" href="images/favicon.ico" /> 
+  <style>A {text-decoration: none;} </style>
+  <body>
+    <a class="otherpage" href="index.html" target="_self">Go back to main page</a>
+    <header>
+      <img
+        class="circular--square"
+        src="images/65203019_2346642588729109_4373330035172442112_n.jpg"
+        alt="logo"
+        height="300"
+        width="300"
+      />
+      <h1>Artiva by Tahsin</h1>
+      <div class="side-bar">
+        <a class="text" href="#"
+          ><i class="fas fa-shopping-cart"></i>
+          <span class="hovertext">Shopping Cart</span>
+        </a>
+        <br />
+        <a class="text" href="#">
+          <i class="fas fa-search"></i>
+          <span class="hovertext">Search</span>
+        </a>
+      
+        <br />
+        <a class="text" href="mailto:trahman31@myseneca.ca">
+          <i class="fas fa-envelope"></i>
+          <span class="hovertext">Send an Email</span>
+        </a>
+        <br />
+        <a class="text" href="https://ko-fi.com/artivasemo">
+          <i class="fas fa-donate"></i>
+          <span class="hovertext">Donate</span>
+        </a>
+      </div>
+    </header>
+    <div class="side-about">
+      <p>
+        Welcome to Artiva!<br />
+        Our store contains different types of home decoration items.<br />
+        Made with love and care all for and from home! <br />
+        Decorate your home with beautiful, rare and aesthetic items!<br />
+        Happy Shopping!
+      </p>
+    </div>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+
+<h2>Contact Us</h2>
+<div class="container">
+  <form id="contact-form" action="https://httpbin.org/post" method="POST">
+    <fieldset><legend>Personal Information</legend>
+      
+    <label class="info" for="fname">*First Name</label>
+    <input type="text" id="fname" name="firstname" required placeholder="Your first name.." spellcheck="false" autocomplete="given-name">
+  
+  <div class="col form-group">
+    <label class="info" for="lname">*Last Name</label>
+    <input type="text" id="lname" name="lastname" required placeholder="Your last name.." spellcheck="false" autocomplete="family-name">
+   
+    <label class="info" for="email">*Email Address</label>
+    <input type="email" id="email" name="email" required placeholder="Enter your email address" spellcheck="false">
+
+    <label class="info" for="address">*Address</label>
+    <input type="text" id="address" name="address" required placeholder="Enter your address" spellcheck="false">
+
+    <label class="info" for="city">*City</label>
+<input type="text" id="city" name="city" required placeholder="Select your city" list="suggestions" />
+<datalist id="suggestions">
+ 
+	<option label="Calgary" value="Calgary"></option>
+	<option label="Charlottetown" value="Charlottetown"></option>
+	<option label="Cold Lake" value="Cold Lake"></option>
+	<option label="Dorval" value="Dorval"></option>
+	<option label="Edmonton" value="Edmonton"></option>
+	<option label="Flin Flon" value="Flin Flon"></option>
+	<option label="Hamilton" value="Hamilton"></option>
+	<option label="Halifax" value="Halifax"></option>
+  <option label="Ottawa" value="Ottawa"></option>
+  <option label="Oshawa" value="Oshawa"></option>
+  <option label="London" value="London"></option>
+	<option label="Niagara Falls" value="Niagara Falls"></option>
+  <option label="Montreal" value="Montreal"></option>
+  <option label="Mississauga" value="Mississauga"></option>
+  <option label="Quebec City" value="Quebec City"></option>
+	<option label="Red Deer" value="Red Deer"></option>
+	<option label="Regina" value="Regina"></option>
+	<option label="St. John's" value="St. John's"></option>
+	<option label="Toronto" value="Toronto"></option>
+	<option label="Vancouver" value="Vancouver"></option>
+	<option label="Victoria" value="Victoria"></option>
+	<option label="Winnipeg" value="Winnipeg"></option>
+	<option label="Yellowknife" value="Yellowknife"></option>
+
+</datalist>
+
+<label class="info" for="postal-code">*Postal Code</label>
+<input type="text" id="postal-code" name="postal-code"  required pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" placeholder="M5M 5M5" autocomplete="postal-code">
+
+<label class="info" for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number.." >
+    
+
+<label class="info" for="whatproblem">*What is this about?</label><br>
+<input type="radio" id="question" onclick="showhide()" name="problem-type" value="question">
+<label class="info" for="question">Question</label><br>
+<input type="radio" id="comment" onclick="showhide()" name="problem-type" value="comment">
+<label class="info" for="comment">Comment</label><br>
+
+
+<input type="radio" id="orderproblem" onclick="showhide()" name="problem-type" value="order-problem">
+<label class="info"  for="orderproblem">Order Problem</label>
+<br>
+
+ <div id="text" style="display: none;">
+ 
+<input type="number" id="orderproblem" name="order-number" placeholder="Enter the order number.."
+pattern="/^-?\d+\.?\d*$/" min="0" onKeyPress="if(this.value.length==9) return false;">
+</div>
+
+
+
+<input type="hidden" id="myname" name="myname" value="Tahsin Rahman">
+</fieldset>
+<fieldset><legend>Message</legend>
+    <label class="info" for="message">Enter your message</label>
+    <textarea id="message" name="message"  placeholder="If it's a question, comment or something else, write down here.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </fieldset>
+  </form>
+
+</div>
+    <!--form validation-->
+    <script>
+      window.onload = function() {
+        //debugger;
+        let form = document.querySelector('#contact-form');
+    
+        //when the user submits the form, run this function to check if it is valid
+        form.onsubmit = function(event) {
+          //step , check if the form is valid (i.e. has all the requirements)
+          if(!form.checkValidity()) {
+            //update the css for the form to show the error message
+            form.classList.add('was-validated');
+    
+            event.preventDefault();
+            return false;
+    
+          }
+          return true;
+        };
+      }
+    </script>
+
+    <p>&nbsp;</p>
+
+    <footer>
+      <div class="footer">
+        <div class="about">
+          <a
+            ><p><u>Declaration</u></p>
+          </a>
+          <p>
+            All of the pictures, logo, shop name are authentic and mine.<br />
+            Click on the social links to check my art works!
+          </p>
+        </div>
+      
+        <hr />
+        <div>
+          <div class="connect">
+          <p class="info">Connect with Social Media!</p>
+
+          <div class="social-media">
+            <ul class="social-icons">
+              <li>
+                <a class="facebook" href="https://www.facebook.com/artivatrs"
+                  ><i class="fa fa-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a class="instagram" href="https://www.instagram.com/artivasemo/"
+                  ><i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a class="twitter" href="https://www.twitter.com/">
+                  <i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a class="linkedin" href="https://www.linkedin.com/in/tahsin-rahman-5499251a9">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+          <div>
+            <hr />
+            <div class="footer-form">
+              <p class="info">Stay Updated!</p>
+              <p class="newsletter">
+                Subscribe to our newsletter to get the latest updates!
+              </p>
+              <form method="POST" action="https://formspree.io/f/xleopran">
+                <input class="inpemail" type="email" name="_replyto" id="email-address" placeholder="Enter email address" required="">
+                <input class="subsbutton" type="submit" value="Subscribe!" />
+              </form>
+            </div>
+            <hr />
+        <div class="cp">
+          <p class="info">Made by Tahsin Rahman</p>
+          <p class="info">Copyright &copy; 2020 All Rights Reserved by Tahsin Rahman</p>
+        </div>
+      </div>
+      </div>
+    </footer>
+  </body>
+</html>
